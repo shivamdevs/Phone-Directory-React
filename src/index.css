@@ -11,3 +11,153 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+body,
+body * {
+  box-sizing: border-box;
+}
+input,
+select,
+button {
+  font-family: inherit;
+  font-size: inherit;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.section {
+    width: 100%;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    background: #111;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+.list {
+    width: 100%;
+    overflow-x: auto;
+}
+.item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 10px 20px;
+    justify-content: space-between;
+    border-bottom: 1px solid #bbb;
+}
+.item-head {
+    font-size: 1.1em;
+    font-weight: 700;
+}
+.item-col {
+    word-wrap: break-word;
+    padding: 0 10px;
+}
+.item-col.name {
+    flex: 1.5 1;
+    min-width: 200px;
+}
+.item-col.phone {
+    flex: 1 1;
+    min-width: 120px;
+}
+.item-col.email {
+    flex: 1.6 1;
+    min-width: 240px;
+}
+.item-col.address {
+    flex: 2 1;
+    min-width: 300px;
+}
+.item-col.action {
+    min-width: 120px;
+}
+.col-line {
+    min-width: 1px;
+    background: #bbb;
+    align-self: stretch;
+}
+.delete {
+    padding: 10px;
+    color: #fff;
+    background: #ff3700;
+    font-weight: 600;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    min-width: 100px;
+}
+.delete:disabled {
+    opacity: .8;
+}
+.delete:not(:disabled):hover {
+    cursor: pointer;
+    background: #be2900;
+}
+.adder {
+    padding: 10px;
+    color: #fff;
+    background: #1e90ff;
+    font-weight: 600;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    min-width: 100px;
+}
+.adder:disabled {
+    opacity: .8;
+}
+.adder:not(:disabled):hover {
+    cursor: pointer;
+    background: #2a52be;
+}
+.addform {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: 10px;
+}
+.formgroup {
+    padding: 10px 0;
+}
+.formsubmit {
+    text-align: center;
+}
+.label {
+    width: 100%;
+    display: block;
+    color: #666;
+    font-weight: 600;
+}
+.input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px auto;
+    border: 1px solid #727888;
+    border-radius: 5px;
+}
+textarea.input {
+    min-height: 100px;
+    max-height: 300px;
+    resize: vertical;
+}

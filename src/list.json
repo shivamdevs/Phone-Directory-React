@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Shivam",
+        "address": "123 Main",
+        "phone": "9898989898",
+        "email": "shivam@gmail.com"
+    },
+    {
+        "name": "Rohan",
+        "address": "123 Main",
+        "phone": "9898989898",
+        "email": "rohan@gmail.com"
+    }
+]
