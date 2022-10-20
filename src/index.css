@@ -54,7 +54,24 @@ input[type=number] {
     justify-content: space-between;
     color: #fff;
     background: #111;
-    padding: 0 20px;
+    padding: 10px 20px;
+}
+.header h2 {
+    display: inline-flex;
+    margin: 0;
+    flex-direction: column;
+}
+.linker {
+    font-size: 14px;
+    font-weight: 600;
+    color: #727888;
+    text-decoration: none;
+}
+.linker:hover,
+.linker:focus,
+.linker:active {
+    text-decoration: underline;
+    color: #2a83be;
 }
 .item {
     width: fit-content;

@@ -30,7 +30,10 @@ function Home(props) {
   return (
     <div className="section">
       <header className="header">
-        <h2>Phone Directory</h2>
+        <h2>
+          <span>Phone Directory</span>
+          <a href="https://github.com/shivamdevs/Phone-Directory-React" className="linker" target="_blank" rel="noopener noreferrer">© Shivam Devs</a>
+        </h2>
         <button className="adder" onClick={props.contact}>Add</button>
       </header>
       <div className="list">
@@ -102,7 +105,10 @@ function Adder(props) {
   return (
     <div className="section">
       <header className="header">
-        <h2>Add Subscriber</h2>
+        <h2>
+          <span>Add Subscriber</span>
+          <a href="https://github.com/shivamdevs/Phone-Directory-React" className="linker" target="_blank" rel="noopener noreferrer">© Shivam Devs</a>
+        </h2>
         <button className="delete" onClick={props.contact}>Cancel</button>
       </header>
       <form action="" method="post" onSubmit={submitHandle} className="addform">
