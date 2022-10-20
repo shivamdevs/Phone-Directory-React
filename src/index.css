@@ -42,38 +42,55 @@ input[type=number] {
 
 
 .section {
-    width: 100%;
+    position: fixed;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
 }
 .header {
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content: space-between;
     color: #fff;
     background: #111;
-    margin-bottom: 20px;
     padding: 0 20px;
 }
-.list {
-    width: 100%;
-    overflow-x: auto;
-}
 .item {
-    width: 100%;
+    width: fit-content;
+    min-width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
-    padding: 10px 20px;
+    padding: 0 20px;
     justify-content: space-between;
     border-bottom: 1px solid #bbb;
 }
 .item-head {
     font-size: 1.1em;
     font-weight: 700;
+    border-bottom-width: 3px;
+    background: #fff;
+    position: sticky;
+    top: 0;
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+    overflow: auto;
 }
 .item-col {
     word-wrap: break-word;
     padding: 0 10px;
+}
+.item-col.number {
+    flex: 0 1;
+    min-width: 40px;
+    justify-content: flex-end;
+    text-align: right;
 }
 .item-col.name {
     flex: 1.5 1;
@@ -92,6 +109,7 @@ input[type=number] {
     min-width: 300px;
 }
 .item-col.action {
+    padding-block: 10px;
     min-width: 120px;
 }
 .col-line {
@@ -160,4 +178,16 @@ textarea.input {
     min-height: 100px;
     max-height: 300px;
     resize: vertical;
+}
+.viewer .item:nth-child(2n - 1) {
+    background: #efefef;
+}
+.viewer:empty::before {
+    content: "Your phone directory is empty. Add a new contact from top.";
+    color: #727888;
+    font-size: 14px;
+    display: block;
+    width: fit-content;
+    margin: 5vh auto;
+    text-align: center;
 }
