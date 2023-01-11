@@ -32,7 +32,7 @@ function Home(props) {
       <header className="header">
         <h2>
           <span>Phone Directory</span>
-          <a href="https://github.com/shivamdevs/Phone-Directory-React" className="linker" target="_blank" rel="noopener noreferrer">© Shivam Devs</a>
+          <a href="https://myoasis.tech" className="linker" target="_blank" rel="noopener noreferrer">© Oasis.tech</a>
         </h2>
         <button className="adder" onClick={props.contact}>Add</button>
       </header>
